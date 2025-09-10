@@ -20,16 +20,16 @@ Objetivo: selecionar **duas redes reais** dos benchmarks do livro *Newman (2018)
 
 🔗 Datasets Utilizados
 
-1. **WWW (Notre Dame)**  
-   - Fonte: [SNAP – Stanford Network Analysis Project](https://snap.stanford.edu/data/web-NotreDame.html)  
-   - Arquivo: `web-NotreDame.txt.gz`  
+1. **WWW**  
+   - Fonte: [networksciencebook](http://networksciencebook.com/translations/en/resources/data.html)  
+   - Arquivo: `www.edgelist.txt`  
    - **Nós (n):** 269 504  
    - **Arestas (m):** 1 497 135  
    - Grafo **direcionado**
 
-2. **Protein–Protein Interaction (Yeast)**  
-   - Fonte: [Kaggle – Yeast PPI dataset](https://www.kaggle.com/datasets/alexandervc/yeast-proteinprotein-interaction-network)  
-   - Arquivo: `yeast_ppi.txt`  
+2. **Protein–Protein Interaction**  
+   - Fonte: [networksciencebook](http://networksciencebook.com/translations/en/resources/data.html)  
+   - Arquivo: `protein.edgelist`  
    - **Nós (n):** ~2 115  
    - **Arestas (m):** ~2 240  
    - Grafo **não direcionado**

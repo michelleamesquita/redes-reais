@@ -177,8 +177,8 @@ def build_markdown_report(df: pd.DataFrame, degree_info: dict | None = None) -> 
     lines.append("\n")
     return "\n".join(lines)
 
-WWW_EDGES = 'data/web-NotreDame.txt'   
-PPI_EDGES = 'data/yeast.edgelist'         
+WWW_EDGES = 'data/www.edgelist.txt'   
+PPI_EDGES = 'data/protein.edgelist.txt'         
 
 G_www = load_edgelist(WWW_EDGES, directed=True, sep='\s+') ##direcionada
 G_ppi = load_edgelist(PPI_EDGES, directed=False, sep='\s+') ##nao direcionada
