@@ -190,8 +190,8 @@ res.append(summarize_network(G_ppi, 'Protein_Interactions'))
 df = pd.DataFrame(res)
 # preparar resumos de grau e adicionar colunas ao DataFrame
 _degree_info = {
-    'WWW_nd.edu': compute_degree_summary(G_www),
-    'Protein_Interactions': compute_degree_summary(G_ppi),
+    'WWW': compute_degree_summary(G_www),
+    'Protein': compute_degree_summary(G_ppi),
 }
 for col in ['max_in_node','max_in_deg','max_out_node','max_out_deg','max_node','max_deg']:
     df[col] = df['name'].map(lambda nm: _degree_info.get(nm, {}).get(col, np.nan))
@@ -201,8 +201,8 @@ df.to_csv('metrics_newman_benchmarks.csv', index=False)
 
 # preparar resumos de grau para conclusões
 _degree_info = {
-    'WWW_nd.edu': compute_degree_summary(G_www),
-    'Protein_Interactions': compute_degree_summary(G_ppi),
+    'WWW': compute_degree_summary(G_www),
+    'Protein': compute_degree_summary(G_ppi),
 }
 
 # gerar relatório Markdown
