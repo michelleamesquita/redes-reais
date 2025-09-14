@@ -336,7 +336,6 @@ _degree_info = {
 for col in ['max_in_node','max_in_deg','max_out_node','max_out_deg','max_node','max_deg']:
     df[col] = df['name'].map(lambda nm: _degree_info.get(nm, {}).get(col, np.nan))
 
-# ell_all_components agora já é calculado em summarize_network
 
 # Componentes e métricas exatas (auto-fallback se CCG muito grande)
 artifacts = {}
